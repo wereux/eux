@@ -20,7 +20,7 @@ gulp.task('css', function() {
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./static/src/css'))
-        .pipe(concat('euxstyle.css'))
+        .pipe(concat('eux.all.css'))
         .pipe(gulp.dest('./static/src/css'))
         .pipe(spriter({
             'spriteSheet': './static/dist/img/sprite.png',
