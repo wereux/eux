@@ -14,7 +14,8 @@ var hbs = require('hbs');
 
 var app = module.exports = express();
 
-app.set('view engine', 'hbs');
+app.set('view engine', 'html');
+app.engine('html', hbs.__express);
 app.set('views', __dirname + '/app/views');
 
 //设置partials

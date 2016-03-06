@@ -17,19 +17,15 @@ var clean = require('gulp-clean');
 //样式处理：将sass文件编译成css进行合并压缩
 gulp.task('css', function() {
     return gulp.src('./static/src/sass/*.scss')
-        .pipe(sourcemaps.init())
+        //.pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./static/src/css'))
         .pipe(concat('eux.all.css'))
         .pipe(gulp.dest('./static/src/css'))
-        .pipe(spriter({
-            'spriteSheet': './static/dist/img/sprite.png',
-            'pathToSpriteSheetFromCSS': '../img/sprite.png'
-        }))
         .pipe(gulp.dest('./static/dist/css'))
         .pipe(rename({ suffix: '.min' }))
         .pipe(cleanCSS())
-        .pipe(sourcemaps.write())
+        //.pipe(sourcemaps.write())
         .pipe(gulp.dest('./static/dist/css'))
         .pipe(livereload());
 });
@@ -49,11 +45,11 @@ gulp.task('img', function() {
 //js处理：语法检测、合并压缩
 gulp.task('js', function() {
     return gulp.src('./static/src/js/**/*.js')
-        .pipe(jshint())
-        .pipe(jshint.reporter('default'))
+       // .pipe(jshint())
+       // .pipe(jshint.reporter('default'))
         .pipe(sourcemaps.init())
-        .pipe(concat('main.js'))
-        .pipe(gulp.dest('./static/src/js'))
+        .pipe(concat('eux.main.js'))
+        .pipe(gulp.dest('./static/dist/js'))
         .pipe(rename({ suffix: '.min' }))
         .pipe(uglify())
         .pipe(gulp.dest('./static/dist/js'))
@@ -89,7 +85,7 @@ gulp.task('watch', function() {
         console.log('task css run...');
     });
 
-    gulp.watch('./static/src/js/**/*.js', function () {
+    gulp.watch('./static/src/js/*.js', function () {
         gulp.run('js');
         console.log('task js run...');
     });
@@ -103,6 +99,7 @@ gulp.task('watch', function() {
     //    gulp.run('bower');
     //    console.log('task bower run...');
     //});
+
 });
 
 // 清空图片、样式、js

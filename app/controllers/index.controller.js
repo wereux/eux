@@ -5,7 +5,8 @@ router.get('/', index);
 
 function index(req, res, next) {
     res.render('index', {
-        title: 'eux'
+        title: 'EUX前端视觉体验中心',
+        page1: true
     });
 }
 
