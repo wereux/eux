@@ -10,16 +10,16 @@ var bodyParser = require('body-parser');
 var favicon = require('serve-favicon');
 var cookieParser = require('cookie-parser');
 var path = require('path');
-var hbs = require('hbs');
+var ejs = require('ejs');
 
 var app = module.exports = express();
 
 app.set('view engine', 'html');
-app.engine('html', hbs.__express);
+app.engine('html', ejs.__express);
 app.set('views', __dirname + '/app/views');
 
-//设置partials
-hbs.registerPartials(__dirname + '/app/views/partials');
+////设置partials
+//hbs.registerPartials(__dirname + '/app/views/common');
 
 
 if (!module.parent) app.use(logger('dev'));

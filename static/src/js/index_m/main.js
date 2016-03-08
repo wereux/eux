@@ -7,6 +7,7 @@ Zepto(function($) {
             right: 0,
             transition: '1s'
         });
+        $(this).hide();
     });
     //点击关闭按钮
     $('.m-nav .close-btn').tap(function() {
@@ -15,6 +16,7 @@ Zepto(function($) {
             right: '-200px',
             transition: '1s'
         });
+        $('.m-menu-btn').show();
     });
 
     //轮播图
@@ -34,6 +36,7 @@ Zepto(function($) {
     //$(document).on('touchmove',function(e){
     //    e.preventDefault();
     //});
+
     //
     //$page.on('touchstart', function(e) {
     //   var touch = e.changedTouches[0];

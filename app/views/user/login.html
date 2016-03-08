@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="login-page">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title><%= title %></title>
+
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/dist/css/eux.all.min.css" rel="stylesheet">
+
+    <script src="http://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+
+</head>
+
+<body class="login-page">
+
+    <main class="login-main">
+        <h1>
+            <img width="449" src="/dist/img/user/logo-g.png" alt="EUX前端视觉体验中心">
+        </h1>
+        <h2>
+            作业考评系统 & 员工管理系统
+        </h2>
+        <form>
+            <div class="form-group">
+                <div class="col-sm-2">
+                    <span class="icon icon-mail"></span>
+                </div>
+                <div class="col-sm-10">
+                    <input name="username" class="form-control" type="text" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-2">
+                    <span class="icon icon-lock"></span>
+                </div>
+                <div class="col-sm-10">
+                    <input name="password" class="form-control" type="password" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <input class="btn btn-primary login-btn" type="submit" value="登录">
+            </div>
+        </form>
+    </main>
+    <script src="/dist/js/user/login.min.js"></script>
+</body>
+
+
+
+

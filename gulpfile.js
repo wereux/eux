@@ -19,14 +19,14 @@ gulp.task('css', function() {
     return gulp.src('./static/src/sass/*.scss')
         //.pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./static/src/css'))
+        .pipe(gulp.dest('./static/src/css/'))
         .pipe(concat('eux.all.css'))
-        .pipe(gulp.dest('./static/src/css'))
-        .pipe(gulp.dest('./static/dist/css'))
+        .pipe(gulp.dest('./static/src/css/'))
+        .pipe(gulp.dest('./static/dist/css/'))
         .pipe(rename({ suffix: '.min' }))
         .pipe(cleanCSS())
         //.pipe(sourcemaps.write())
-        .pipe(gulp.dest('./static/dist/css'))
+        .pipe(gulp.dest('./static/dist/css/'))
         .pipe(livereload());
 });
 
@@ -38,7 +38,7 @@ gulp.task('img', function() {
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()]
         }))
-        .pipe(gulp.dest('./static/dist/img'))
+        .pipe(gulp.dest('./static/dist/img/'))
         .pipe(livereload());
 });
 
@@ -52,17 +52,17 @@ gulp.task('js', function() {
         //.pipe(gulp.dest('./static/dist/js'))
         .pipe(rename({ suffix: '.min' }))
         .pipe(uglify())
-        .pipe(gulp.dest('./static/dist/js'))
+        .pipe(gulp.dest('./static/dist/js/'))
         .pipe(livereload());
 });
 
-gulp.task('js-concat', function() {
+gulp.task('js-concat',['js'], function() {
     return gulp.src('./static/src/js/common/*.js')
         .pipe(concat('eux.main.js'))
-        .pipe(gulp.dest('./static/dist/js/common'))
+        .pipe(gulp.dest('./static/dist/js/common/'))
         .pipe(rename({ suffix: '.min' }))
         .pipe(uglify())
-        .pipe(gulp.dest('./static/dist/js/common'))
+        .pipe(gulp.dest('./static/dist/js/common/'))
         .pipe(livereload());
 });
 
@@ -96,7 +96,7 @@ gulp.task('watch', function() {
     });
 
     gulp.watch('./static/src/js/**/*.js', function () {
-        gulp.run('js');
+       // gulp.run('js');
         gulp.run('js-concat');
         console.log('task js run...');
     });
@@ -121,6 +121,6 @@ gulp.task('clean', function() {
 
 
 gulp.task('default', ['clean'], function() {
-    gulp.start('css','img','js','js-concat','start');
+    gulp.start('css','img','js-concat','start');
 });
 
