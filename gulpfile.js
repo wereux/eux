@@ -48,11 +48,21 @@ gulp.task('js', function() {
        // .pipe(jshint())
        // .pipe(jshint.reporter('default'))
         .pipe(sourcemaps.init())
-        .pipe(concat('eux.main.js'))
-        .pipe(gulp.dest('./static/dist/js'))
+        //.pipe(concat('eux.main.js'))  //无奈之举啊，这个concat不强大。。。
+        //.pipe(gulp.dest('./static/dist/js'))
         .pipe(rename({ suffix: '.min' }))
         .pipe(uglify())
         .pipe(gulp.dest('./static/dist/js'))
+        .pipe(livereload());
+});
+
+gulp.task('js-concat', function() {
+    return gulp.src('./static/src/js/common/*.js')
+        .pipe(concat('eux.main.js'))
+        .pipe(gulp.dest('./static/dist/js/common'))
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(uglify())
+        .pipe(gulp.dest('./static/dist/js/common'))
         .pipe(livereload());
 });
 
@@ -85,8 +95,9 @@ gulp.task('watch', function() {
         console.log('task css run...');
     });
 
-    gulp.watch('./static/src/js/*.js', function () {
+    gulp.watch('./static/src/js/**/*.js', function () {
         gulp.run('js');
+        gulp.run('js-concat');
         console.log('task js run...');
     });
 
@@ -104,12 +115,12 @@ gulp.task('watch', function() {
 
 // 清空图片、样式、js
 gulp.task('clean', function() {
-    gulp.src(['./static/dist/css', './static/dist/js', './static/dist/img', './static/dist/lib'], {read: false})
+    gulp.src(['./static/dist/css', './static/dist/js', './static/dist/img'], {read: false})
         .pipe(clean());
 });
 
 
 gulp.task('default', ['clean'], function() {
-    gulp.start('css','img','js','start');
+    gulp.start('css','img','js','js-concat','start');
 });
 

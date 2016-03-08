@@ -4,7 +4,7 @@ var router = express.Router();
 router.get('/', index);
 
 function index(req, res, next) {
-    res.render('index', {
+    res.render('index_m', {
         title: 'EUX前端视觉体验中心'
     });
 }

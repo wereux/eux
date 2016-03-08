@@ -45,6 +45,8 @@ require('./lib/router.js')(app);
 var db = require('./lib/db.js')();
 
 
+
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

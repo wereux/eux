@@ -137,3 +137,68 @@
   .about a:hover {
     background-color: #3191f1;
     transition: all .2s; }
+
+.eux-nav-main {
+  animation: slidedown 2s;
+  overflow: hidden; }
+
+@keyframes slidedown {
+  from {
+    max-height: 0; }
+  to {
+    max-height: 300px; } }
+
+.eux-close-side {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  text-decoration: none;
+  display: none;
+  width: 24px;
+  height: 24px;
+  background: url("/dist/img/common/icon-close.png") no-repeat;
+  -webkit-background-size: 16px 16px;
+  background-size: 16px 16px; }
+  .eux-close-side:hover {
+    background-image: url("/dist/img/common/icon-close-hover.png");
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s; }
+
+.login-form {
+  position: absolute;
+  top: 64px;
+  right: 0;
+  background-color: #242433;
+  padding: 60px 40px;
+  width: 300px;
+  display: none; }
+  .login-form .eux-close-side {
+    display: block; }
+  .login-form input {
+    width: 100%;
+    padding: 6px 12px; }
+
+.eux-message {
+  display: none;
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  width: 800px;
+  margin-left: -400px;
+  padding: 60px 40px;
+  padding-top: 80px;
+  background-color: #474766; }
+  .eux-message .eux-close-side {
+    display: block; }
+  .eux-message .form-group input, .eux-message .form-group textarea {
+    width: 100%;
+    padding: 6px 12px;
+    background-color: #62628c;
+    color: #ccc;
+    border: none; }
+  .eux-message .btn {
+    width: 120px;
+    height: 36px; }

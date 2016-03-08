@@ -2,6 +2,9 @@ body {
   font-family: 'Microsoft YaHei','Hiragino Sans GB',Helvetica,Arial;
   font-size: 16px; }
 
+li {
+  list-style-type: none; }
+
 .navbar {
   min-height: 64px; }
 
@@ -24,6 +27,8 @@ body {
 @media (max-width: 768px) {
   .collapse {
     display: block; }
+  .login-form {
+    display: none; }
   #eux-collapse-btn {
     display: block; }
   .navbar-right {
@@ -39,19 +44,26 @@ body {
     padding: 0; }
     #navbar .eux-nav {
       padding-top: 88px; }
-  #eux-close-side {
-    position: absolute;
-    z-index: 999;
-    right: 16px;
-    top: 16px;
-    color: #fff;
-    text-decoration: none;
-    color: #e5e5e5;
+  .eux-close-side {
     display: block; }
-    #eux-close-side:hover {
-      color: #fff; }
   .navbar-inverse {
     background-color: #000; } }
 
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
   max-height: 1000px; }
+
+.btn {
+  width: 274px;
+  height: 48px;
+  padding: 0;
+  text-align: center;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  border: none; }
+
+.btn-primary {
+  background-color: #3399ff; }
+
+.btn-primary:hover {
+  background-color: #4ba5fd; }
