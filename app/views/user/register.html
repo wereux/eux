@@ -1,0 +1,53 @@
+<% include ../common/header.html %>
+
+<div class="eux-register">
+    <div class="row">
+        <div class="container">
+            <form class="form-horizontal" action="/user/reg" method="post">
+                <div class="form-group">
+                    <label for="username" class="col-sm-2 control-label">用户名</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" maxlength="20" name="username" required id="username" placeholder="建议使用姓名全拼">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-sm-2 control-label">密码</label>
+                    <div class="col-sm-10">
+                        <input disabled type="password" class="form-control" id="password" placeholder="初始密码与用户名相同">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="department" class="col-sm-2 control-label">部门</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" required maxlength="20" name="department" id="department" placeholder="输入规范的部门名称">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="position" class="col-sm-2 control-label">职位</label>
+                    <div class="col-sm-10">
+                        <select name="position" id="position" class="form-control">
+                            <% if(user.position == 0) { %><option value="0">CEO</option> <% } %>
+                            <% if(user.position <= 2) { %><option value="2">总监</option> <% } %>
+                            <% if(user.position <= 4) { %><option value="4">主管</option> <% } %>
+                            <option value="6" selected>员工</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="note" class="col-sm-2 control-label">备注</label>
+                    <div class="col-sm-10">
+                        <textarea id="note" name="note" maxlength="200" class="form-control" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <input type="submit" class="btn btn-primary" value="录入">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<% include ../common/footer.html %>

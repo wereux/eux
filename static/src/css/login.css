@@ -1,0 +1,97 @@
+.login-page {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: url("/dist/img/user/bg.png") bottom center no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%; }
+
+.login-main {
+  width: 475px;
+  margin: 150px auto; }
+  .login-main h2 {
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 3px; }
+  .login-main form {
+    width: 320px;
+    margin: 30px auto; }
+    .login-main form .icon {
+      top: 10px;
+      left: 6px;
+      position: relative; }
+    .login-main form .icon-mail {
+      width: 33px;
+      height: 21px;
+      background-image: url("/dist/img/user/name.png");
+      display: block; }
+    .login-main form .icon-lock {
+      width: 26px;
+      height: 28px;
+      background-image: url("/dist/img/user/password.png");
+      display: block;
+      top: 6px; }
+    .login-main form .form-group {
+      margin-bottom: 16px;
+      overflow: hidden;
+      text-align: center; }
+    .login-main form input[type=text], .login-main form input[type=password] {
+      border: none;
+      border-bottom: 2px solid #9ac7cf;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      background: none;
+      border-radius: 2px;
+      color: #fff;
+      position: relative;
+      left: -6px; }
+    .login-main form .login-btn {
+      width: 284px;
+      height: 48px;
+      border: 1px solid #fff;
+      background: none;
+      border-radius: 6px;
+      margin-top: 16px;
+      font-size: 24px;
+      letter-spacing: 5px;
+      text-align: center; }
+      .login-main form .login-btn:hover {
+        background-color: #fff;
+        color: #0a5c75; }
+
+@media (min-width: 1400px) {
+  .login-main {
+    width: 768px;
+    margin: 200px auto; }
+    .login-main h1 img {
+      width: 752px; }
+    .login-main h2 {
+      letter-spacing: 13px;
+      font-size: 42px; }
+    .login-main form {
+      width: 530px;
+      margin: 70px auto; }
+      .login-main form .icon {
+        top: 0;
+        left: 0;
+        position: relative; }
+      .login-main form .icon-mail {
+        width: 52px;
+        height: 33px;
+        background-image: url("/dist/img/user/name-g.png"); }
+      .login-main form .icon-lock {
+        width: 39px;
+        height: 44px;
+        background-image: url("/dist/img/user/password-g.png");
+        top: 0px; }
+      .login-main form .form-group {
+        margin-bottom: 45px; }
+      .login-main form input[type=text], .login-main form input[type=password] {
+        font-size: 24px; }
+      .login-main form .login-btn {
+        width: 485px;
+        height: 78px;
+        margin-top: 30px;
+        font-size: 36px;
+        letter-spacing: 10px; } }

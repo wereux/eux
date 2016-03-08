@@ -1,6 +1,6 @@
 module.exports = {
     normalstring: function(str) {
-        return /[0-9]|[a-zA-Z]|[\u4e00-\u9fa5]/.test(str);
+        return /[0-9]|[a-zA-Z]|[\u4e00-\u9fa5]]/.test(str);
     },
     emptystring: function(str) {
         return /^\s*$/.test(str);

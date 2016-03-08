@@ -13,13 +13,11 @@ $(function () {
         $.post('/message', pdata, function(data) {
             data = JSON.parse(data);
             if (data.status == 200) {
-
+                alert('留言成功！');
+            } else {
+                alert(data.msg);
             }
         });
         return false;
     });
-
-    function validateTel(tel) {
-        return /^([0-9]{11})?$/.test(tel);
-    }
 });

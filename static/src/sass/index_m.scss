@@ -165,7 +165,7 @@
     p {
       text-align: center;
       color: #f5f5f5;
-      max-width:280px;
+      max-width:286px;
       margin:8px auto;
     }
     p:last-of-type {
@@ -183,4 +183,30 @@
 
 .m-page.zoomindex {
   z-index:9;
+}
+
+.join-us {
+  padding: 30px;
+  h1 {
+    font-size: 24px;
+    color:#fff;
+    font-weight:normal;
+    padding:8px 0;
+  }
+  form {
+    .form-control {
+      margin: 8px 0;
+    }
+    input[type=text], textarea {
+      background-color: #19232f;
+      border:1px solid #141c26;
+      border-radius:2px;
+      color:#fff;
+    }
+    
+    input[type=submit] {
+      color:#fff;
+      width:100%;
+    }
+  }
 }

@@ -48,4 +48,21 @@ $(function() {
     function slideRight() {
         $('#navbar').animate({'right': '-200px'}, 'slow');
     }
+
+    //登录功能
+    $('.login-form form').submit(function() {
+        var pdata = $(this).serialize();
+        $.post('/user/login', pdata, function(data) {
+            data = JSON.parse(data);
+            if (data.status == 200) {
+                //刷新页面
+                window.location.reload();
+            }else {
+                //显示错误提示
+                $('#login-error-text').text(data.msg).show();
+            }
+        });
+
+        return false;
+    });
 });

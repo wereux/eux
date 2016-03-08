@@ -263,3 +263,49 @@
 
 }
 
+@media (max-width: 1400px) {
+  .index-main {
+    width: 475px;
+    margin-left:-238px;
+
+    h1 {
+      width: 400px;
+      height: 120px;
+      margin-top: 30%;
+      img {
+        width: 400px;
+      }
+    }
+    .eux-nav-main {
+      margin-top: 40px;
+
+      li {
+        a {
+          line-height:35px;
+        }
+      }
+
+
+    }
+
+    .about {
+      a {
+        line-height:36px;
+        width:160px;
+        height:36px;
+      }
+    }
+
+    footer {
+      p {
+        padding-top: 16px;
+        margin-bottom:0;
+      }
+    }
+  }
+
+  .decoration1 {
+    right: 5%;
+  }
+}
+

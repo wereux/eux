@@ -5,7 +5,8 @@ router.get('/', blog);
 
 function blog(req, res, next) {
     res.render('blog/index', {
-        title: 'EUX博客'
+        title: 'EUX博客',
+        user: req.session.user
     });
 }
 
