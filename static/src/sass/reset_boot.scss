@@ -3,6 +3,9 @@ body {
   font-size: 16px;
 }
 
+li {
+  list-style-type:none;
+}
 .navbar {
   min-height: 64px;
 }
@@ -33,6 +36,10 @@ body {
     display: block;
   }
 
+  .login-form {
+    display: none;
+  }
+
   #eux-collapse-btn{
     display: block;
   }
@@ -52,20 +59,11 @@ body {
       padding-top: 88px;
     }
   }
-  #eux-close-side {
-    position: absolute;
-    z-index: 999;
-    right:16px;
-    top:16px;
-    color:#fff;
-    text-decoration: none;
-    color:#e5e5e5;
-    display: block;
 
-    &:hover{
-      color:#fff;
-    }
+  .eux-close-side {
+    display: block;
   }
+
   #navbar a {
 
   }
@@ -76,4 +74,23 @@ body {
 
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
   max-height:1000px;
+}
+
+.btn {
+  width: 274px;
+  height: 48px;
+  padding: 0;
+  text-align: center;
+  -webkit-border-radius:2px;
+  -moz-border-radius:2px;
+  border-radius:2px;
+  border:none;
+}
+
+.btn-primary {
+  background-color: #3399ff;
+}
+
+.btn-primary:hover {
+  background-color: #4ba5fd;
 }

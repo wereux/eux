@@ -6,7 +6,7 @@
 			'r': 6,
 			'color': '#205780',
 			'lineWidth': 2,
-			'speed': 0.25
+			'speed': 0.5
 		}, options);
 
 		return this.each(function() {
