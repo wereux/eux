@@ -108,6 +108,20 @@ Zepto(function($) {
     });
 
 
+    //报名表单提交
+    $('.join-us form').submit(function() {
+        var pdata = $(this).serialize();
+        $.post('/apply', pdata, function(data) {
+            data = JSON.parse(data);
+            if (data.status == 200) {
+                alert('报名成功，您是第' + data.number + '位报名者！');
+            } else {
+                alert(data.msg);
+            }
+        });
+        return false;
+    });
+
 
 
 });

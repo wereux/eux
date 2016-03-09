@@ -1,0 +1,35 @@
+<% include ../common/header.html %>
+
+<div class="eux-register">
+    <div class="row">
+        <div class="container">
+            <table class="table table-striped table-hover ">
+                <thead>
+                    <tr>
+                        <th>姓名</th>
+                        <th>专业班级</th>
+                        <th>电话</th>
+                        <th>技术基础</th>
+                        <th>留言</th>
+                        <th>报名时间</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <% for (var key in apply) { %>
+                    <tr>
+                        <th><%= apply[key].username %></th>
+                        <th><%= apply[key].grade %></th>
+                        <th><%= apply[key].tel %></th>
+                        <th><%= apply[key].primary %></th>
+                        <th><%= apply[key].mesg %></th>
+                        <th><%= apply[key].date %></th>
+                    </tr>
+                <% } %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<% include ../common/footer.html %>
