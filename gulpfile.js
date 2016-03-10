@@ -115,10 +115,9 @@ gulp.task('watch', function() {
 
 // 清空图片、样式、js
 gulp.task('clean', function() {
-    gulp.src(['./static/dist/css', './static/dist/js', './static/dist/img'], {read: false})
+    return gulp.src(['./static/dist/css', './static/dist/js', './static/dist/img'], {read: false})
         .pipe(clean());
 });
-
 
 gulp.task('default', ['clean'], function() {
     gulp.start('css','img','js-concat','start');

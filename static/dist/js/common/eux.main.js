@@ -225,7 +225,7 @@ $(function() {
 
     //登录框
     $('#login-btn').click(function() {
-        $('.login-form').slideDown('slow').show();
+        $('.login-form').slideDown('fast').show();
         return false;
     });
     $('.login-form .eux-close-side').click(function() {
