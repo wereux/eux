@@ -7,7 +7,7 @@
 
 	//这里是所有参数的配置项
 	var data = {
-		num: 500, //星星的数目
+		num: 1000, //星星的数目
 		maxRadius: 1.3, //最大星星半径（范围内随机）
 		color: '#4693f0', //星星的颜色（透明度随机）
 		blinkNum: 0.5, //闪烁星星百分比
@@ -15,7 +15,7 @@
 	}
 
 	rCanvas();
-	window.onresize = rCanvas; //当浏览器窗口改变时重新设置canvas大小
+	window.onresize = rCanvas(); //当浏览器窗口改变时重新设置canvas大小
 
 	//这个函数让画布保持全屏显示
 	function rCanvas() {

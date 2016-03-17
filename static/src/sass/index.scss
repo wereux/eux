@@ -231,13 +231,15 @@
 .eux-message {
   display: none;
   position: absolute;
-  bottom: 15%;
+  top:50%;
+  transform:translateY(-50%);
   left: 50%;
   width:800px;
   margin-left: -400px;
   padding: 60px 40px;
   padding-top: 80px;
   background-color: #474766;
+  z-index:999;
 
   .eux-close-side {
     display: block;

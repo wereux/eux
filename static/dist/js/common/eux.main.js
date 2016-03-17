@@ -188,6 +188,7 @@ $(function () {
         return false;
     });
 });
+
 $(function() {
     $('.eux-nav li').removeClass('active');
     $('.navbar-fixed-top').removeClass('opacity-navbar');
