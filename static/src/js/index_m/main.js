@@ -5,7 +5,7 @@ Zepto(function($) {
         //$('.m-nav').animate({right: 0}, 500);
         $('.m-nav').css({
             right: 0,
-            transition: '1s'
+            transition: '0.5s'
         });
         $(this).hide();
     });
@@ -14,7 +14,7 @@ Zepto(function($) {
        // $('.m-nav').animate({right: '-200px'}, 500);
         $('.m-nav').css({
             right: '-200px',
-            transition: '1s'
+            transition: '0.5s'
         });
         $('.m-menu-btn').show();
     });
