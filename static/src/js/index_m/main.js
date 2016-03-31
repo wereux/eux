@@ -26,6 +26,17 @@ Zepto(function($) {
         nextButton:'.swiper-button-next',
     });
 
+    //音乐开关
+    $('#musicControl').on('tap',function() {
+      var audioobj = document.getElementsByTagName('audio')[0];
+      if(audioobj.paused) {
+        audioobj.play();
+      } else {
+        audioobj.pause();
+      }
+      $(this).toggleClass('active');
+    });
+
     var $page = $('.m-page');
 
     //滑屏滚动
@@ -121,7 +132,4 @@ Zepto(function($) {
         });
         return false;
     });
-
-
-
 });

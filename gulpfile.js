@@ -113,7 +113,7 @@ gulp.task('watch', function() {
 
 });
 
-// 清空图片、样式、js
+// 清空图片、样式、jsgul
 gulp.task('clean', function() {
     return gulp.src(['./static/dist/css', './static/dist/js', './static/dist/img'], {read: false})
         .pipe(clean());
