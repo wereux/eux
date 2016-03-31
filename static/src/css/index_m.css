@@ -21,7 +21,7 @@
   right: -200px;
   width: 200px;
   background-color: rgba(31, 54, 77, 0.8);
-  padding-top: 45px;
+  padding-top: 60px;
   padding-left: 0; }
   .m-nav .close-btn {
     background: url("/dist/img/index_m/m-icon-close.png") no-repeat;
@@ -172,3 +172,40 @@
   .join-us form input[type=submit] {
     color: #fff;
     width: 100%; }
+
+#musicControl {
+  width: 3em;
+  height: 3em;
+  padding: .5em;
+  border-radius: 50%;
+  border: 2px solid #494d5e;
+  position: fixed;
+  right: 2em;
+  bottom: 3.6em;
+  -webkit-animation: 4s infinite loops;
+  -o-animation: 4s infinite loops;
+  animation: 4s infinite loops;
+  background: transparent;
+  z-index: 999; }
+
+#musicControl.active {
+  background: rgba(0, 0, 0, 0.7); }
+
+#musicControl img {
+  width: 100%;
+  height: 100%;
+  transform: rotate(30deg); }
+
+@keyframes loops {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
