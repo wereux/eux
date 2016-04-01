@@ -30,6 +30,7 @@ Zepto(function($) {
     $('#musicControl').on('tap',function() {
       var audioobj = document.getElementsByTagName('audio')[0];
       if(audioobj.paused) {
+        audioobj.load();
         audioobj.play();
       } else {
         audioobj.pause();
