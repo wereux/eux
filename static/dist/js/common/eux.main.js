@@ -201,6 +201,8 @@ $(function() {
         case '/blog':
             $('.eux-nav li').eq(1).addClass('active');
             break;
+        case '/course':
+            $('.eux-nav li').eq(2).addClass('active');
         default:
             break;
     }

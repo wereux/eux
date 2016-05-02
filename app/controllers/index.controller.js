@@ -18,6 +18,7 @@ function index(req, res, next) {
   }
 }
 
+//不要写在这里面
 function about(req, res) {
     return res.render('about', {
         title: '关于我们',

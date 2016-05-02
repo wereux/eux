@@ -1,46 +1,35 @@
 body {
-  font-family: 'Microsoft YaHei','Hiragino Sans GB',Helvetica,Arial;
+  font-family: 'Microsoft YaHei', 'Hiragino Sans GB', Helvetica, Arial;
   font-size: 16px;
 }
 
-li {
-  list-style-type:none;
-}
 .navbar {
   min-height: 64px;
 }
-
 .nav>li>a {
-  line-height:64px;
+  line-height: 64px;
   padding: 0 16px;
 }
-
 .navbar-inverse {
   background-color: #1b1b26;
 }
-
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
   background-color: #242433;
 }
-
 .nav>li {
   line-height: 64px;
 }
-
 .navbar-right {
   margin-right: 16px;
 }
-
-@media (max-width: 768px) {
+@media (max-width:768px) {
   .collapse {
     display: block;
   }
-
   .login-form {
     display: none;
   }
-
-  #eux-collapse-btn{
+  #eux-collapse-btn {
     display: block;
   }
   .navbar-right {
@@ -48,49 +37,66 @@ li {
   }
   #navbar {
     position: absolute;
-    z-index:999;
-    top:0;
-    right:-200px;
-    width:200px;
-    height:100%;
+    z-index: 999;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100%;
     background-color: #1b1b26;
-    padding:0;
+    padding: 0;
+
     .eux-nav {
       padding-top: 88px;
     }
   }
-
   .eux-close-side {
     display: block;
   }
-
   #navbar a {
-
   }
-  .navbar-inverse{
+  .navbar-inverse {
     background-color: #000;
   }
 }
-
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-  max-height:1000px;
+  max-height: 1000px;
 }
-
 .btn {
-  width: 274px;
-  height: 48px;
-  padding: 0;
-  text-align: center;
-  -webkit-border-radius:2px;
-  -moz-border-radius:2px;
-  border-radius:2px;
+  border-radius: 2px;
   border:none;
 }
-
 .btn-primary {
   background-color: #3399ff;
 }
-
 .btn-primary:hover {
   background-color: #4ba5fd;
+}
+.btn-border {
+  background-color: transparent;
+  border: 1px solid #36525a;
+}
+.btn-border:hover {
+  background-color: #39f;
+  // border: none;
+}
+.pagination {
+  li {
+    a {
+      border: none;
+      color: #000;
+      background: rgba(0, 0, 0, 0);
+    }
+    a:hover {
+      background: #3095ff;
+      color: #fff;
+      border-radius: 2px;
+    }
+  }
+  .active {
+    a {
+      color: #3095ff;
+      border-bottom: 2px solid #3095ff;
+      background: rgba(0, 0, 0, 0);
+    }
+  }
 }

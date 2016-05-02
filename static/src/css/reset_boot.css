@@ -1,9 +1,6 @@
 body {
-  font-family: 'Microsoft YaHei','Hiragino Sans GB',Helvetica,Arial;
+  font-family: 'Microsoft YaHei', 'Hiragino Sans GB', Helvetica, Arial;
   font-size: 16px; }
-
-li {
-  list-style-type: none; }
 
 .navbar {
   min-height: 64px; }
@@ -53,12 +50,6 @@ li {
   max-height: 1000px; }
 
 .btn {
-  width: 274px;
-  height: 48px;
-  padding: 0;
-  text-align: center;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
   border-radius: 2px;
   border: none; }
 
@@ -67,3 +58,25 @@ li {
 
 .btn-primary:hover {
   background-color: #4ba5fd; }
+
+.btn-border {
+  background-color: transparent;
+  border: 1px solid #36525a; }
+
+.btn-border:hover {
+  background-color: #39f; }
+
+.pagination li a {
+  border: none;
+  color: #000;
+  background: transparent; }
+
+.pagination li a:hover {
+  background: #3095ff;
+  color: #fff;
+  border-radius: 2px; }
+
+.pagination .active a {
+  color: #3095ff;
+  border-bottom: 2px solid #3095ff;
+  background: transparent; }

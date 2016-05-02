@@ -1,3 +1,222 @@
+.course {
+  background: #f5f5f5;
+  top: 65px;
+  position: relative; }
+  .course a {
+    color: #000; }
+  .course a:hover, .course a:active, .course a:focus {
+    color: #39f;
+    text-decoration: none; }
+  .course .course-search {
+    padding-top: 15px;
+    color: #5f5f5f;
+    height: 120px;
+    background: url(/dist/img/course/course-search-bg.png) center; }
+    .course .course-search .course-search-form {
+      width: 300px;
+      margin: 0 auto; }
+      .course .course-search .course-search-form input {
+        transition: 0.4s;
+        background: rgba(66, 66, 66, 0.5);
+        border: none;
+        height: 40px;
+        float: left;
+        width: 230px;
+        padding-left: 1em; }
+      .course .course-search .course-search-form .btn {
+        transition: 0.4s;
+        width: 68px;
+        height: 40px;
+        padding: 0;
+        float: left;
+        background: rgba(66, 66, 66, 0.5);
+        border-radius: 0; }
+        .course .course-search .course-search-form .btn .icon-search {
+          font-size: 28px;
+          border-left: 2px solid #5f5f5f;
+          padding: 0 20px; }
+    .course .course-search .course-search-form:hover input {
+      background: #d7d7d7; }
+    .course .course-search .course-search-form:hover .btn {
+      background: #d7d7d7; }
+      .course .course-search .course-search-form:hover .btn .icon-search {
+        color: #3399ff; }
+  .course .course-header {
+    background: url(/dist/img/course/course-header-bg.png) center;
+    height: 190px; }
+    .course .course-header .circle {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      box-shadow: 0 0 2px #28474b; }
+    .course .course-header .container .breadcrumb {
+      background: transparent;
+      font-size: 12px;
+      margin-top: 15px; }
+      .course .course-header .container .breadcrumb li a {
+        color: #747474; }
+      .course .course-header .container .breadcrumb li:before {
+        color: #747474; }
+    .course .course-header .container section {
+      padding-left: 0; }
+      .course .course-header .container section h1 {
+        color: #afafaf;
+        margin-top: 5px;
+        margin-bottom: 30px; }
+      .course .course-header .container section small {
+        color: #747474; }
+      .course .course-header .container section ol {
+        color: #747474;
+        font-size: 12px;
+        line-height: 2em;
+        position: relative;
+        top: -20px;
+        display: none; }
+    .course .course-header .container .circles {
+      position: relative;
+      top: 10px; }
+      .course .course-header .container .circles .circle1, .course .course-header .container .circles .circle2 {
+        border-radius: 50%;
+        box-shadow: 0 0 4px rgba(70, 153, 234, 0.3); }
+      .course .course-header .container .circles .circle1 {
+        width: 46px;
+        height: 46px;
+        position: absolute; }
+      .course .course-header .container .circles .circle2 {
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        left: 20px;
+        top: 5px; }
+    .course .course-header .container .circles:hover .circle1, .course .course-header .container .circles:hover .circle2 {
+      border-radius: 50%;
+      box-shadow: 0 0 6px #479eed; }
+    .course .course-header .container .btn-lg {
+      transition: 0.3s;
+      margin-top: 10px;
+      font-size: 22px;
+      color: #afafaf;
+      padding: 0.6em 1.8em; }
+    .course .course-header .container .btn-lg:hover {
+      color: #fff; }
+  .course .content {
+    padding-left: 0;
+    padding-right: 0;
+    background: #fdfdfd; }
+  .course .content, .course .container {
+    max-width: 1070px; }
+    .course .content .row, .course .container .row {
+      padding: 0 36px; }
+      .course .content .row .list-inline li, .course .container .row .list-inline li {
+        margin: 0.5em 0.5em; }
+    .course .content .breadcrumb, .course .container .breadcrumb {
+      background: #fdfdfd;
+      padding: 5px 0;
+      margin-bottom: 10px;
+      margin-top: 20px; }
+    .course .content .course-content, .course .container .course-content {
+      transition: 0.4s;
+      padding: 15px;
+      max-width: 320px;
+      margin: 0 12px 30px 0; }
+      .course .content .course-content .course-content-img, .course .container .course-content .course-content-img {
+        margin: 0 auto; }
+        .course .content .course-content .course-content-img img, .course .container .course-content .course-content-img img {
+          width: 287px;
+          height: 162px; }
+      .course .content .course-content .course-content-title h4, .course .container .course-content .course-content-title h4 {
+        font-size: 16px; }
+      .course .content .course-content .course-content-title small, .course .container .course-content .course-content-title small {
+        color: #b5b5b5; }
+      .course .content .course-content .course-content-title:hover, .course .container .course-content .course-content-title:hover {
+        color: #000; }
+    .course .content .course-content:hover, .course .container .course-content:hover {
+      background: #fff;
+      box-shadow: 4px 4px 4px #d4d7d9; }
+    .course .content .course-introduction-titles, .course .container .course-introduction-titles {
+      border-bottom: 2px solid #f5f5f5;
+      padding: 0; }
+      .course .content .course-introduction-titles .course-introduction-title, .course .container .course-introduction-titles .course-introduction-title {
+        padding-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0 110px;
+        font-size: 26px;
+        color: #000;
+        margin-bottom: -2px;
+        cursor: pointer;
+        box-sizing: content-box; }
+      .course .content .course-introduction-titles .course-introduction-title:hover, .course .container .course-introduction-titles .course-introduction-title:hover {
+        background: linear-gradient(#fdfdfd, #f5f5f5); }
+      .course .content .course-introduction-titles .active, .course .container .course-introduction-titles .active {
+        border-bottom: 2px solid #39f;
+        color: #39f; }
+    .course .content .course-introduction-list, .course .container .course-introduction-list {
+      list-style-type: none; }
+      .course .content .course-introduction-list .list-chapter, .course .container .course-introduction-list .list-chapter {
+        padding: 1.5em 0;
+        margin-left: 55px; }
+        .course .content .course-introduction-list .list-chapter .list-lessons, .course .container .course-introduction-list .list-chapter .list-lessons {
+          list-style: none; }
+          .course .content .course-introduction-list .list-chapter .list-lessons .list-lesson, .course .container .course-introduction-list .list-chapter .list-lessons .list-lesson {
+            padding-top: 20px;
+            padding-right: 24px; }
+            .course .content .course-introduction-list .list-chapter .list-lessons .list-lesson a, .course .container .course-introduction-list .list-chapter .list-lessons .list-lesson a {
+              color: #afafaf; }
+            .course .content .course-introduction-list .list-chapter .list-lessons .list-lesson a:hover, .course .container .course-introduction-list .list-chapter .list-lessons .list-lesson a:hover {
+              color: #39f; }
+      .course .content .course-introduction-list .list-chapter + .list-chapter, .course .container .course-introduction-list .list-chapter + .list-chapter {
+        border-top: 1px solid #f3f3f3; }
+  .course .lesson-media {
+    height: 480px;
+    background: #2b2b2b; }
+    .course .lesson-media .container {
+      height: 100%;
+      background: #0b0b0b; }
+  .course .lesson-contents .course-introduction-titles .course-introduction-title {
+    margin: 0 209px; }
+  .course .lesson-contents .lesson-comments {
+    padding: 0 80px; }
+    .course .lesson-contents .lesson-comments .form-group {
+      padding-left: 60px;
+      padding-right: 60px; }
+      .course .lesson-contents .lesson-comments .form-group textarea {
+        height: 130px;
+        margin-bottom: 16px; }
+    .course .lesson-contents .lesson-comments .list-comment-item {
+      border-top: 1px solid #ebebeb;
+      position: relative; }
+      .course .lesson-contents .lesson-comments .list-comment-item .list-user-avatar {
+        width: 40px;
+        height: 40px;
+        margin-top: 16px; }
+      .course .lesson-contents .lesson-comments .list-comment-item .list-user-time {
+        color: #bcbcbc; }
+      .course .lesson-contents .lesson-comments .list-comment-item .list-user-comment {
+        margin-left: 50px;
+        margin-top: 4px;
+        margin-bottom: 30px; }
+      .course .lesson-contents .lesson-comments .list-comment-item .list-user-id {
+        color: #bcbcbc;
+        margin-left: 10px; }
+
+.footBar {
+  height: 130px;
+  background: #1b1b26;
+  color: #9d9d9d;
+  position: relative;
+  top: 64px; }
+  .footBar .footBar-content {
+    position: absolute;
+    left: 50%;
+    margin-left: -125px;
+    top: 40px; }
+    .footBar .footBar-content a {
+      text-decoration: none;
+      color: #9d9d9d; }
+    .footBar .footBar-content a:hover {
+      color: #fff; }
+
 .eux-logo {
   line-height: 64px;
   margin-left: 6px; }
@@ -179,7 +398,8 @@
     display: block; }
   .login-form input {
     width: 100%;
-    padding: 6px 12px; }
+    padding: 6px 12px;
+    height: 48px; }
 
 .eux-message {
   display: none;
@@ -558,11 +778,8 @@
         letter-spacing: 10px; } }
 
 body {
-  font-family: 'Microsoft YaHei','Hiragino Sans GB',Helvetica,Arial;
+  font-family: 'Microsoft YaHei', 'Hiragino Sans GB', Helvetica, Arial;
   font-size: 16px; }
-
-li {
-  list-style-type: none; }
 
 .navbar {
   min-height: 64px; }
@@ -612,12 +829,6 @@ li {
   max-height: 1000px; }
 
 .btn {
-  width: 274px;
-  height: 48px;
-  padding: 0;
-  text-align: center;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
   border-radius: 2px;
   border: none; }
 
@@ -626,6 +837,28 @@ li {
 
 .btn-primary:hover {
   background-color: #4ba5fd; }
+
+.btn-border {
+  background-color: transparent;
+  border: 1px solid #36525a; }
+
+.btn-border:hover {
+  background-color: #39f; }
+
+.pagination li a {
+  border: none;
+  color: #000;
+  background: transparent; }
+
+.pagination li a:hover {
+  background: #3095ff;
+  color: #fff;
+  border-radius: 2px; }
+
+.pagination .active a {
+  color: #3095ff;
+  border-bottom: 2px solid #3095ff;
+  background: transparent; }
 
 .eux-register {
   margin-top: 100px; }

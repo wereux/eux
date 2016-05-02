@@ -14,8 +14,11 @@
 		blinkSpeed: 0.08 //闪烁速率，0-0.5，越小越柔和
 	}
 
+    //初始化所有星星
+    var stars = [];
+
 	rCanvas();
-	window.onresize = rCanvas(); //当浏览器窗口改变时重新设置canvas大小
+    window.onresize = function(){rCanvas();}; //当浏览器窗口改变时重新设置canvas大小
 
 	//这个函数让画布保持全屏显示
 	function rCanvas() {
@@ -24,10 +27,13 @@
 		//更新canvas宽度和高度
 		cWidth = canvas.offsetWidth;
 		cHeight = canvas.offsetHeight;
+
+        // 每次初始化画布时，清空星星
+        stars = [];
+        initStars();
 	}
 
-	//初始化所有星星
-	var stars = [];
+
 
 	function initStars() {
 		for (var i = 0; i < data.num; i++) {
